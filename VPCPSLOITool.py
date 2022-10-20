@@ -40,7 +40,7 @@ from qgis.core import Qgis
 import os
 import glob
 
-class LocationsOfInterestv1(QgsProcessingAlgorithm):
+class VPCPSLOITool(QgsProcessingAlgorithm):
     """
     The Locations of Interest Tool takes a table in spreadsheet format, as
     formatted by the supplying financial institute, and returns indexed scored,
@@ -78,7 +78,7 @@ class LocationsOfInterestv1(QgsProcessingAlgorithm):
         return QCoreApplication.translate('Processing', string)
 
     def createInstance(self):
-        return LocationsOfInterestv1()
+        return VPCPSLOITool()
 
     def name(self):
         """
@@ -88,21 +88,21 @@ class LocationsOfInterestv1(QgsProcessingAlgorithm):
         lowercase alphanumeric characters only and no spaces or other
         formatting characters.
         """
-        return 'LocationsOfInterestv1'
+        return 'VPCPS LOI Tool'
 
     def displayName(self):
         """
         Returns the translated algorithm name, which should be used for any
         user-visible display of the algorithm name.
         """
-        return self.tr('IP Locations Of Interest')
+        return self.tr('VPCPS LOI Tool')
 
     def group(self):
         """
         Returns the name of the group this algorithm belongs to. This string
         should be localised.
         """
-        return self.tr('Locations Of Interest')
+        return self.tr('VPCPS LOI Tool')
 
     def groupId(self):
         """
@@ -112,7 +112,7 @@ class LocationsOfInterestv1(QgsProcessingAlgorithm):
         contain lowercase alphanumeric characters only and no spaces or other
         formatting characters.
         """
-        return 'Locations Of Interest'
+        return 'VPCPS LOI Tool'
 
     def shortHelpString(self):
         """
@@ -120,7 +120,7 @@ class LocationsOfInterestv1(QgsProcessingAlgorithm):
         should provide a basic description about what the algorithm does and the
         parameters and outputs associated with it..
         """
-        return self.tr('The Locations of Interest Tool Converts IP locations into Spatial features' '\n' 
+        return self.tr('The VPCPS LOI Tool Converts IP locations into Spatial features' '\n' 
         'The input is a raw data in spreadsheet format, as formatted by the supplying financial institute,'
         'and the output is a shapefile and two xlsx reports.' '\n'
         'The shapefile contains LOI field with indexed scores, and closest police station.'
