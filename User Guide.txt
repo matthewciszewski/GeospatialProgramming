@@ -1,0 +1,13 @@
+User Guide
+This user guide is aimed at intermediate level QGIS operators and users with some knowledge of python scripting. This user guide works best if QGIS is open to a new project and the available sample data stored in a raw data directory and an empty analysis directory at the same hierarchy level for example:
+D:\YourFolder\Rawdata
+D:\YourFolder\Analysis
+1.	In QGIS open the processing toolbox and select create a new script from the   drop down menu
+2.	Open Python script from https://github.com/matthewciszewski/GeospatialProgramming/blob/main/VPCPSLOITool.py
+3.	Copy and paste the script into the new script dialog box and save the script.
+4.	Run the Script. The Dialog in Graphic 6 appears.
+5.	Use Graphic 6 as an example for the tool data requirements and select the sample data as provided.
+6.	Run the tool.
+7.	Tool data requires same attributes and data types as sample data provided.
+8.	All the analysis data created will be stored to D:\YourFolder\Analysis.
+9.	The final analysis outputs will be stored to D:\YourFolder.
